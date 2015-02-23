@@ -24,4 +24,8 @@ mainModule.controller('MainCtrl', ['$scope', '$famous', '$timeout', function($sc
 	$scope.getRotateY = function(){
 		return t.get();
 	}
-}])
+}]).config(['$mdThemingProvider', function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('amber')
+    .accentPalette('light-green');
+}]);
