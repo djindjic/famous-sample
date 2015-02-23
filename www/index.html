@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <style>
+      [ng-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body data-main-app ng-cloak>
+    <md-toolbar layout="row">
+        <h3>
+          <span>famous-sample</span>
+        </h3>
+    </md-toolbar>
+    <fa-app class="full-screen" ng-controller="MainCtrl">
+      <fa-modifier fa-origin="[.5, .5]" fa-align="[.5, .5]" fa-rotate-z="getRotateY()" >
+        <fa-surface fa-size="[200, 200]" fa-options="{properties: {backfaceVisibility: 'visible'}}">
+          <img src="images/90ball.png" class="logo"/>
+        </fa-surface>
+      </fa-modifier>
+    </fa-app>
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+      System.import('app/bootstrap');
+    </script>
+  </body>
+</html>
