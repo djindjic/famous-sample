@@ -1,10 +1,7 @@
-var capabilities = require('./sauce_labs_capabilities.js').capabilities;
-
 var configuration = {
-  multiCapabilities: [{
-    'browserName': 'chrome'
-  }],
-
+  capabilities: {
+    browserName: "firefox"
+  },
   specs: ['e2e/spec.js'],
 
   jasmineNodeOpts: {
@@ -16,15 +13,7 @@ var configuration = {
   },
 };
 
-if(process.env.TRAVIS){
-  configuration.multiCapabilities = Object.keys(capabilities).map(function (key) {
-    return capabilities[key];
-  });
-  configuration.sauceUser = process.env.SAUCE_USERNAME;
-  configuration.sauceKey = process.env.SAUCE_ACCESS_KEY;
-} else {
-  configuration.baseUrl = 'http://localhost:9000';
-  configuration.directConnect = true;
-}
+configuration.baseUrl = 'http://localhost:9000';
+configuration.directConnect = true;
 
 exports.config = configuration;

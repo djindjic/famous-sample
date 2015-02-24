@@ -1,6 +1,10 @@
 language: node_js
 node_js:
   - "0.10"
+addons:
+  firefox: "19.0"
+services:
+  - selenium
 before_script:
   - "export DISPLAY=:99.0"
   - "/etc/init.d/xvfb start"
@@ -22,3 +26,5 @@ after_success:
   - divshot promote staging production -t $DIVSHOT_KEY
 after_script:
   - "/etc/init.d/xvfb stop"
+env:
+  - secure: nB3jVWYz8mncegDXpggwHXYfkPsk3tkjTVqMNbV8NI5yYtJ2J3Ovqlnozk8kqGmCzgfZKqpVgSxsyQHVdpwgYX4WcbuKhNKrHdh+VyitBxKyvy1dxFfMWRlcuugnX0wA0s7wZItpAnWD0JWxeFY9/p5VMqG9bpxWNMeQGzxCuYX2P/F/ZMrv77UR8Ri/J9YQs9KGkbn0L3TzX4pgA+pDbdKpJ7CbxnyE6nkWVjDH/hzbZ0LDP6z76aL1/0v3CnvgsP5SBcbx3GzZYL1lnEkqfS63O9eUsZoNzIlUVdVy+d2Sn6Viq9/qRpNG1OqsK93sFC1T40uglAhQHcyjfRJyRQ==
