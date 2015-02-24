@@ -2,7 +2,7 @@ import angular from 'angular';
 import mocks from 'angular-mocks';
 import {mainModule} from './main';
 
-describe('HomeController', function() {
+describe('MainCtrl', function() {
   beforeEach(angular.mock.module(mainModule.name));
 
   var $controller;
@@ -13,7 +13,7 @@ describe('HomeController', function() {
 
   it('greetMe should be world', function() {
 	var scope = {};
-	var controller = $controller('HomeController', { $scope: scope });
+	var controller = $controller('MainCtrl', { $scope: scope });
 	expect(scope.greetMe).to.equal('world');
   });
 });

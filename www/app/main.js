@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-material';
-import './style.css!'
+import './styles/style.css!'
 import 'famous-angular';
 
 export let mainModule = angular.module('famous-sample', [
@@ -32,6 +32,7 @@ mainModule.controller('MainCtrl', ['$scope', '$famous', '$timeout', function($sc
 	$scope.getRotateY = function(){
 		return t.get();
 	}
+	$scope.greetMe = 'world';
 }]).config(['$mdThemingProvider', function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('amber')
