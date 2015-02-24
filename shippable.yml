@@ -8,6 +8,7 @@ services:
 before_script:
   - "export DISPLAY=:99.0"
   - "/etc/init.d/xvfb start"
+  - npm install -g gulp
   - npm install -g jspm
   - npm install -g protractor
   - npm install -g karma-cli
