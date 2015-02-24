@@ -12,6 +12,7 @@
     "karma": "^0.12.28",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.1.7",
+    "karma-firefox-launcher": "^0.1.4",
     "karma-jspm": "^1.1.1",
     "karma-mocha": "^0.1.10",
     "karma-mocha-reporter": "^0.2.2",
