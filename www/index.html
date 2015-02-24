@@ -16,10 +16,12 @@
         </h3>
     </md-toolbar>
     <fa-app class="full-screen" ng-controller="MainCtrl">
-      <fa-modifier fa-origin="[.5, .5]" fa-align="[.5, .5]" fa-rotate-z="getRotateY()" >
-        <fa-surface fa-size="[200, 200]" fa-options="{properties: {backfaceVisibility: 'visible'}}">
-          <img src="images/90ball.png" class="logo"/>
-        </fa-surface>
+      <fa-modifier fa-origin="[.5, .5]" fa-align="[.5, .5]" fa-translate="myTransitionable.get()">
+        <fa-modifier fa-origin="[.5, .5]" fa-align="[.5, .5]" fa-rotate-z="getRotateY()">
+          <fa-surface fa-size="[200, 200]" fa-options="{properties: {backfaceVisibility: 'visible'}}">
+            <img src="images/90ball.png" class="logo"/>
+          </fa-surface>
+        </fa-modifier>
       </fa-modifier>
     </fa-app>
     <script src="jspm_packages/system.js"></script>
