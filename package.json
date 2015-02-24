@@ -15,7 +15,6 @@
     "karma-jspm": "^1.1.1",
     "karma-mocha": "^0.1.10",
     "karma-mocha-reporter": "^0.2.2",
-    "karma-sauce-launcher": "^0.2.10",
     "karma-sinon": "^1.0.4",
     "mocha": "^2.1.0",
     "promise": "^6.0.1",

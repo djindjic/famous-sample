@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/djindjic/famous-sample.svg?branch=master)](https://travis-ci.org/djindjic/famous-sample)
-
 ###Instalation
 ```bash
 git clone git@github.com:djindjic/famous-sample.git && cd famous-sample
